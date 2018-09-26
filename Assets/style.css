@@ -35,8 +35,8 @@ img.galleryPic {
 }
 
 .quiz {
-    height: 400px;
-    width: 500px;
+    height: 500px;
+    width: 600px;
     background: black;
     margin: auto;
 
@@ -49,6 +49,10 @@ img.galleryPic {
     color: white;
     font-size: 3em;
 
+}
+
+.quiz {
+    color: white;
 }
 
 

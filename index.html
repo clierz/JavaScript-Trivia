@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>JavaScript Trivia Game</title>
-
-    <!-- Stylesheet - Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    <title>JavaScript Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    <script src="https://surveyjs.azureedge.net/1.0.44/survey.ko.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/style.css">
 
-    <!-- JavaScript Libraries -->
-    <script src="../knockout-3.4.2.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>JavaScript Trivia Game</title>
 </head>
 
 <body>
-
-<!--Header-->
     <header class="header">
         <div class="header__content">
-        <span>How Well Do You Know JavaScript?</span>
+            <span>How Well Do You Know JavaScript?</span>
         </div>
-     </header>
-     <br><br>
-
-<!--Row of Images-->
-    <section id = "graphics" class = "section3">
-        <img src="Assets/js3.png" class="galleryPic" alt="JavaScript Image">
-         <img src="Assets/js3.png" class="galleryPic" alt="JavaScript Image">
-         <img src="Assets/js3.png" class="galleryPic" alt="JavaScript Image">
+    </header>
+    <br><br>
+    <section id="graphics" class="section3">
+        <img src="assets/js3.png" class="galleryPic" alt="JavaScript Image">
+        <img src="assets/js2.jpg" class="galleryPic" alt="JavaScript Image">
+        <img src="assets/js1.png" class="galleryPic" alt="JavaScript Image">
     </section>
     <br><br>
- 
-<!--Quiz Area-->
-    <div id ="quiz" class = "quiz">
-        <div id ="quizheader" class = "quizheader">
+    
+    <center class = "quiz">
+    
+    <div id="quizheader" class = "quizheader">
             <span>The JavaScript Quiz</span>
         </div>
-        <button id="Submit">Submit</button>
-        <div id="results"></div>
-    </div>
-<!--Footer-->
+    <div id="surveyElement"></div>
+    <div id="surveyResult"></div>
 
-    <footer class="footer">
+    <script type="text/javascript" src="js/main.js"></script>
+</center>
+
+   <footer class="footer">
         <span class="footer__text">Authors: Caren Lierz & Timothy Wilson</span>
     </footer>
-  </body>
-  </html>
+</body>
 
-
+</html>
